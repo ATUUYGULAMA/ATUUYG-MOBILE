@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#005f9e"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".Login">
+    <ImageView
+        android:id="@+id/girislogo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:background="@drawable/insurance" />
+    <EditText
+        android:id="@+id/kullanici"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="Kullanıcı Adı"
+        android:textSize="28dp"
+        android:maxLength="25"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:fontFamily="serif-monospace"
+        android:background="@drawable/buttonlayout"
+        android:padding="10dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/sifre"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="Şifre"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:background="@drawable/buttonlayout"
+        android:padding="10dp"
+        android:textSize="28dp"
+        android:inputType="textPassword"
+        android:maxLength="25"
+        android:fontFamily="serif-monospace"
+        android:textStyle="bold" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/buttonlayout"
+        android:textColor="#005f9e"
+        android:id="@+id/üyeolmadan"
+        android:text="  Giriş Yap  "
+        />
+
+</LinearLayout>
