@@ -39,7 +39,7 @@
         android:orientation="horizontal"
         android:layout_margin="10dp">
         <TextView
-            android:id="@+id/markayazi"
+            android:id="@+id/magazaadi"
             android:layout_width="100dp"
             android:layout_height="30dp"
             android:text="  Araç Markası  "
