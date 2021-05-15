@@ -105,7 +105,7 @@
             android:text="Hasar Bilgileri" />
 
         <EditText
-            android:id="@+id/bilgigiris"
+            android:id="@+id/bilgigiriss"
             android:layout_width="180dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
