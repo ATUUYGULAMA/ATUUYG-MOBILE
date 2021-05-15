@@ -1,13 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#005f9e"
-    android:gravity="center"
     android:orientation="vertical"
-    tools:context=".Advertise">
+    android:background="@drawable/gradient">
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -17,7 +14,7 @@
             android:layout_width="150dp"
             android:layout_height="150dp"
             android:layout_gravity="center"
-            android:background="@drawable/user"
+            android:background="@drawable/profile"
             android:layout_margin="5dp"/>
 
         <Button
@@ -29,29 +26,30 @@
             android:layout_marginTop="5dp"
             android:background="@drawable/buttonlayout"
             android:padding="5dp"
-            android:text="  Fotoğrafı Değiştir"
+            android:text="  Fotoğraf Ekle"
             android:textColor="#005f9e" />
     </LinearLayout>
     <LinearLayout
         android:id="@+id/marka"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:layout_margin="10dp">
 
         <TextView
             android:id="@+id/magazaadi"
-            android:layout_width="100dp"
+            android:layout_width="180dp"
             android:layout_height="30dp"
             android:layout_gravity="center"
+            android:layout_margin="5dp"
             android:background="@drawable/buttonlayout"
             android:gravity="center"
             android:padding="5dp"
-            android:text="Ad" />
+            android:text="Araç Markası" />
 
         <EditText
             android:id="@+id/markagiris"
-            android:layout_width="150dp"
+            android:layout_width="180dp"
             android:layout_height="30dp"
             android:layout_gravity="center"
             android:layout_margin="10dp"
@@ -61,24 +59,25 @@
     </LinearLayout>
     <LinearLayout
         android:id="@+id/yas"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:layout_margin="10dp">
 
         <TextView
             android:id="@+id/yasyazi"
-            android:layout_width="100dp"
+            android:layout_width="180dp"
             android:layout_height="30dp"
             android:layout_gravity="center"
+            android:layout_margin="5dp"
             android:background="@drawable/buttonlayout"
             android:gravity="center"
             android:padding="5dp"
-            android:text="Soyad" />
+            android:text="Araç Yaşı" />
 
         <EditText
             android:id="@+id/yasgiris"
-            android:layout_width="150dp"
+            android:layout_width="180dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_margin="10dp"
@@ -89,24 +88,25 @@
     </LinearLayout>
     <LinearLayout
         android:id="@+id/bilgi"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:layout_margin="10dp">
 
         <TextView
             android:id="@+id/bilgiyazi"
-            android:layout_width="100dp"
+            android:layout_width="180dp"
             android:layout_height="30dp"
             android:layout_gravity="center"
+            android:layout_margin="5dp"
             android:background="@drawable/buttonlayout"
             android:gravity="center"
             android:padding="5dp"
-            android:text="Kullanıcı Adı" />
+            android:text="Hasar Bilgileri" />
 
         <EditText
             android:id="@+id/bilgigiris"
-            android:layout_width="150dp"
+            android:layout_width="180dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_margin="10dp"
@@ -116,25 +116,26 @@
     </LinearLayout>
     <LinearLayout
         android:id="@+id/aciklama"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:layout_margin="10dp">
 
         <TextView
             android:id="@+id/aciklamayazi"
-            android:layout_width="100dp"
+            android:layout_width="180dp"
             android:layout_height="30dp"
             android:layout_gravity="center"
+            android:layout_margin="5dp"
             android:background="@drawable/buttonlayout"
             android:gravity="center"
             android:padding="5dp"
-            android:text="Şifre" />
+            android:text="Açıklama" />
 
         <EditText
             android:id="@+id/aciklamagiris"
-            android:layout_width="150dp"
-            android:layout_height="wrap_content"
+            android:layout_width="180dp"
+            android:layout_height="100dp"
             android:layout_gravity="center"
             android:layout_margin="10dp"
             android:background="@drawable/buttonlayout"
@@ -143,94 +144,39 @@
     </LinearLayout>
     <LinearLayout
         android:id="@+id/konum"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:layout_margin="10dp">
 
         <TextView
             android:id="@+id/konumyazi"
-            android:layout_width="100dp"
+            android:layout_width="180dp"
             android:layout_height="30dp"
             android:layout_gravity="center"
+            android:layout_margin="5dp"
             android:background="@drawable/buttonlayout"
             android:gravity="center"
             android:padding="5dp"
-            android:text="E-Posta" />
+            android:text="Konum" />
 
-        <EditText
-            android:id="@+id/konumgiris"
-            android:layout_width="150dp"
-            android:layout_height="wrap_content"
+        <ImageView
+            android:id="@+id/locationimage"
+            android:layout_width="83dp"
+            android:layout_height="83dp"
             android:layout_gravity="center"
-            android:layout_margin="10dp"
-            android:background="@drawable/buttonlayout"
-            android:gravity="center"
-            android:padding="5dp" />
+            android:layout_margin="5dp"
+            android:background="@drawable/orangeLocation" />
+
     </LinearLayout>
-    <LinearLayout
-        android:id="@+id/aciklama"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_margin="10dp">
-
-        <TextView
-            android:id="@+id/aciklamayazi"
-            android:layout_width="100dp"
-            android:layout_height="30dp"
-            android:layout_gravity="center"
-            android:background="@drawable/buttonlayout"
-            android:gravity="center"
-            android:padding="5dp"
-            android:text="Telefon No" />
-
-        <EditText
-            android:id="@+id/telefonno"
-            android:layout_width="150dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_margin="10dp"
-            android:background="@drawable/buttonlayout"
-            android:gravity="center"
-            android:padding="5dp" />
-    </LinearLayout>
-    <LinearLayout
-        android:id="@+id/adres"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_margin="10dp">
-
-        <TextView
-            android:id="@+id/aciklamayazi"
-            android:layout_width="100dp"
-            android:layout_height="30dp"
-            android:layout_gravity="center"
-            android:background="@drawable/buttonlayout"
-            android:gravity="center"
-            android:padding="5dp"
-            android:text="Adres" />
-
-        <EditText
-            android:id="@+id/aciklamagiris"
-            android:layout_width="150dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_margin="10dp"
-            android:background="@drawable/buttonlayout"
-            android:gravity="center"
-            android:padding="5dp" />
-    </LinearLayout>
-
     <Button
         android:id="@+id/kaydet"
-        android:layout_width="match_parent"
+        android:layout_width="150dp"
         android:layout_height="30dp"
         android:layout_marginTop="5dp"
         android:background="@drawable/buttonlayout"
         android:padding="5dp"
-        android:text="Profili Düzenle"
+        android:layout_gravity="center"
+        android:text="İLAN VER"
         android:textColor="#073a93" />
-
 </LinearLayout>
